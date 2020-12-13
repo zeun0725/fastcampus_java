@@ -30,6 +30,7 @@ class Main{
 			var resultSet = statement.executeQuery("select id, username, password from member");
 			while(resultSet.next()) {
 				var member = new Member(resultSet);
+
 				logger.info(member.toString());
 			}
 		} catch (SQLException e) {
