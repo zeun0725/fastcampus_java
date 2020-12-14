@@ -1,0 +1,621 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:10:58.385 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.41
+15-Dec-2020 01:10:58.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Dec 3 2020 11:43:00 UTC
+15-Dec-2020 01:10:58.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.41.0
+15-Dec-2020 01:10:58.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+15-Dec-2020 01:10:58.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.14.3
+15-Dec-2020 01:10:58.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+15-Dec-2020 01:10:58.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home
+15-Dec-2020 01:10:58.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          14.0.2+12-46
+15-Dec-2020 01:10:58.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+15-Dec-2020 01:10:58.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:10:58.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:10:58.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Dec-2020 01:10:58.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+15-Dec-2020 01:10:58.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:10:58.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/conf/logging.properties
+15-Dec-2020 01:10:58.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Dec-2020 01:10:58.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+15-Dec-2020 01:10:58.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Dec-2020 01:10:58.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Dec-2020 01:10:58.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+15-Dec-2020 01:10:58.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:10:58.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:10:58.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/temp
+15-Dec-2020 01:10:58.427 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/parkjieun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15-Dec-2020 01:10:58.861 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+15-Dec-2020 01:10:58.919 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1159)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1172)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:592)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1039)
+		... 13 more
+15-Dec-2020 01:10:58.925 INFO [main] org.apache.catalina.startup.Catalina.load [854] 밀리초 내에 서버가 초기화되었습니다.
+15-Dec-2020 01:10:58.973 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+15-Dec-2020 01:10:58.973 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.41]
+15-Dec-2020 01:10:58.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]을(를) 배치합니다.
+15-Dec-2020 01:10:59.315 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]에 대한 배치가 [329] 밀리초에 완료되었습니다.
+15-Dec-2020 01:10:59.315 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]을(를) 배치합니다.
+15-Dec-2020 01:10:59.374 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]에 대한 배치가 [59] 밀리초에 완료되었습니다.
+15-Dec-2020 01:10:59.375 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]을(를) 배치합니다.
+15-Dec-2020 01:10:59.716 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]에 대한 배치가 [340] 밀리초에 완료되었습니다.
+15-Dec-2020 01:10:59.716 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]을(를) 배치합니다.
+15-Dec-2020 01:10:59.736 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]에 대한 배치가 [20] 밀리초에 완료되었습니다.
+15-Dec-2020 01:10:59.736 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]을(를) 배치합니다.
+15-Dec-2020 01:10:59.759 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]에 대한 배치가 [23] 밀리초에 완료되었습니다.
+15-Dec-2020 01:10:59.769 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [844] 밀리초 내에 시작되었습니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:11:47.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.41
+15-Dec-2020 01:11:47.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Dec 3 2020 11:43:00 UTC
+15-Dec-2020 01:11:47.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.41.0
+15-Dec-2020 01:11:47.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+15-Dec-2020 01:11:47.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.14.3
+15-Dec-2020 01:11:47.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+15-Dec-2020 01:11:47.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home
+15-Dec-2020 01:11:47.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          14.0.2+12-46
+15-Dec-2020 01:11:47.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+15-Dec-2020 01:11:47.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:11:47.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:11:47.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Dec-2020 01:11:47.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+15-Dec-2020 01:11:47.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:11:47.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/conf/logging.properties
+15-Dec-2020 01:11:47.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Dec-2020 01:11:47.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+15-Dec-2020 01:11:47.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Dec-2020 01:11:47.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Dec-2020 01:11:47.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+15-Dec-2020 01:11:47.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:11:47.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:11:47.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/temp
+15-Dec-2020 01:11:47.963 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/parkjieun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15-Dec-2020 01:11:48.375 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+15-Dec-2020 01:11:48.433 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1159)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1172)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:592)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1039)
+		... 13 more
+15-Dec-2020 01:11:48.437 INFO [main] org.apache.catalina.startup.Catalina.load [850] 밀리초 내에 서버가 초기화되었습니다.
+15-Dec-2020 01:11:48.480 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+15-Dec-2020 01:11:48.480 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.41]
+15-Dec-2020 01:11:48.489 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]을(를) 배치합니다.
+15-Dec-2020 01:11:48.814 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]에 대한 배치가 [322] 밀리초에 완료되었습니다.
+15-Dec-2020 01:11:48.814 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]을(를) 배치합니다.
+15-Dec-2020 01:11:48.865 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]에 대한 배치가 [51] 밀리초에 완료되었습니다.
+15-Dec-2020 01:11:48.865 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]을(를) 배치합니다.
+15-Dec-2020 01:11:49.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]에 대한 배치가 [326] 밀리초에 완료되었습니다.
+15-Dec-2020 01:11:49.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]을(를) 배치합니다.
+15-Dec-2020 01:11:49.217 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]에 대한 배치가 [26] 밀리초에 완료되었습니다.
+15-Dec-2020 01:11:49.217 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]을(를) 배치합니다.
+15-Dec-2020 01:11:49.240 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]에 대한 배치가 [23] 밀리초에 완료되었습니다.
+15-Dec-2020 01:11:49.257 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [819] 밀리초 내에 시작되었습니다.
+15-Dec-2020 01:11:49.266 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:396)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:282)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+15-Dec-2020 01:11:49.267 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+15-Dec-2020 01:11:49.267 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+15-Dec-2020 01:11:49.294 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+15-Dec-2020 01:11:49.295 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:11:58.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.41
+15-Dec-2020 01:11:58.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Dec 3 2020 11:43:00 UTC
+15-Dec-2020 01:11:58.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.41.0
+15-Dec-2020 01:11:58.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+15-Dec-2020 01:11:58.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.14.3
+15-Dec-2020 01:11:58.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+15-Dec-2020 01:11:58.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home
+15-Dec-2020 01:11:58.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          14.0.2+12-46
+15-Dec-2020 01:11:58.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+15-Dec-2020 01:11:58.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:11:58.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:11:58.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Dec-2020 01:11:58.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+15-Dec-2020 01:11:58.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:11:58.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/conf/logging.properties
+15-Dec-2020 01:11:58.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Dec-2020 01:11:58.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+15-Dec-2020 01:11:58.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Dec-2020 01:11:58.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Dec-2020 01:11:58.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+15-Dec-2020 01:11:58.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:11:58.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:11:58.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/temp
+15-Dec-2020 01:11:58.209 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/parkjieun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15-Dec-2020 01:11:58.604 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+15-Dec-2020 01:11:58.664 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1159)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1172)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:592)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1039)
+		... 13 more
+15-Dec-2020 01:11:58.667 INFO [main] org.apache.catalina.startup.Catalina.load [776] 밀리초 내에 서버가 초기화되었습니다.
+15-Dec-2020 01:11:58.710 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+15-Dec-2020 01:11:58.710 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.41]
+15-Dec-2020 01:11:58.720 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]을(를) 배치합니다.
+15-Dec-2020 01:11:59.054 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]에 대한 배치가 [333] 밀리초에 완료되었습니다.
+15-Dec-2020 01:11:59.055 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]을(를) 배치합니다.
+15-Dec-2020 01:11:59.105 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]에 대한 배치가 [51] 밀리초에 완료되었습니다.
+15-Dec-2020 01:11:59.105 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]을(를) 배치합니다.
+15-Dec-2020 01:11:59.423 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]에 대한 배치가 [318] 밀리초에 완료되었습니다.
+15-Dec-2020 01:11:59.423 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]을(를) 배치합니다.
+15-Dec-2020 01:11:59.443 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]에 대한 배치가 [20] 밀리초에 완료되었습니다.
+15-Dec-2020 01:11:59.443 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]을(를) 배치합니다.
+15-Dec-2020 01:11:59.466 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]에 대한 배치가 [23] 밀리초에 완료되었습니다.
+15-Dec-2020 01:11:59.472 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [805] 밀리초 내에 시작되었습니다.
+15-Dec-2020 01:11:59.482 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:396)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:282)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+15-Dec-2020 01:11:59.482 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+15-Dec-2020 01:11:59.483 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+15-Dec-2020 01:11:59.506 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+15-Dec-2020 01:11:59.507 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:13:38.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.41
+15-Dec-2020 01:13:38.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Dec 3 2020 11:43:00 UTC
+15-Dec-2020 01:13:38.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.41.0
+15-Dec-2020 01:13:38.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+15-Dec-2020 01:13:38.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.14.3
+15-Dec-2020 01:13:38.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+15-Dec-2020 01:13:38.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home
+15-Dec-2020 01:13:38.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          14.0.2+12-46
+15-Dec-2020 01:13:38.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+15-Dec-2020 01:13:38.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:13:38.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:13:38.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Dec-2020 01:13:38.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+15-Dec-2020 01:13:38.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:13:38.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/conf/logging.properties
+15-Dec-2020 01:13:38.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Dec-2020 01:13:38.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+15-Dec-2020 01:13:38.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Dec-2020 01:13:38.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Dec-2020 01:13:38.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+15-Dec-2020 01:13:38.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:13:38.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:13:38.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/temp
+15-Dec-2020 01:13:38.583 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/parkjieun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15-Dec-2020 01:13:38.992 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+15-Dec-2020 01:13:39.049 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1159)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1172)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:592)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1039)
+		... 13 more
+15-Dec-2020 01:13:39.051 INFO [main] org.apache.catalina.startup.Catalina.load [823] 밀리초 내에 서버가 초기화되었습니다.
+15-Dec-2020 01:13:39.095 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+15-Dec-2020 01:13:39.096 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.41]
+15-Dec-2020 01:13:39.105 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]을(를) 배치합니다.
+15-Dec-2020 01:13:39.430 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]에 대한 배치가 [323] 밀리초에 완료되었습니다.
+15-Dec-2020 01:13:39.430 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]을(를) 배치합니다.
+15-Dec-2020 01:13:39.483 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]에 대한 배치가 [53] 밀리초에 완료되었습니다.
+15-Dec-2020 01:13:39.484 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]을(를) 배치합니다.
+15-Dec-2020 01:13:39.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]에 대한 배치가 [417] 밀리초에 완료되었습니다.
+15-Dec-2020 01:13:39.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]을(를) 배치합니다.
+15-Dec-2020 01:13:39.923 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]에 대한 배치가 [22] 밀리초에 완료되었습니다.
+15-Dec-2020 01:13:39.923 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]을(를) 배치합니다.
+15-Dec-2020 01:13:39.953 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]에 대한 배치가 [30] 밀리초에 완료되었습니다.
+15-Dec-2020 01:13:39.960 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [908] 밀리초 내에 시작되었습니다.
+15-Dec-2020 01:13:39.969 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:396)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:282)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+15-Dec-2020 01:13:39.970 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+15-Dec-2020 01:13:39.971 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+15-Dec-2020 01:13:40.001 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+15-Dec-2020 01:13:40.003 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:14:47.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.41
+15-Dec-2020 01:14:47.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Dec 3 2020 11:43:00 UTC
+15-Dec-2020 01:14:47.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.41.0
+15-Dec-2020 01:14:47.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+15-Dec-2020 01:14:47.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.14.3
+15-Dec-2020 01:14:47.542 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+15-Dec-2020 01:14:47.542 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home
+15-Dec-2020 01:14:47.542 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          14.0.2+12-46
+15-Dec-2020 01:14:47.542 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+15-Dec-2020 01:14:47.542 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:14:47.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:14:47.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Dec-2020 01:14:47.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+15-Dec-2020 01:14:47.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:14:47.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/conf/logging.properties
+15-Dec-2020 01:14:47.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Dec-2020 01:14:47.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+15-Dec-2020 01:14:47.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Dec-2020 01:14:47.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Dec-2020 01:14:47.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+15-Dec-2020 01:14:47.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:14:47.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:14:47.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/temp
+15-Dec-2020 01:14:47.569 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/parkjieun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15-Dec-2020 01:14:47.967 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+15-Dec-2020 01:14:48.029 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1159)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1172)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:592)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1039)
+		... 13 more
+15-Dec-2020 01:14:48.040 INFO [main] org.apache.catalina.startup.Catalina.load [814] 밀리초 내에 서버가 초기화되었습니다.
+15-Dec-2020 01:14:48.082 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+15-Dec-2020 01:14:48.082 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.41]
+15-Dec-2020 01:14:48.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]을(를) 배치합니다.
+15-Dec-2020 01:14:48.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]에 대한 배치가 [308] 밀리초에 완료되었습니다.
+15-Dec-2020 01:14:48.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]을(를) 배치합니다.
+15-Dec-2020 01:14:48.451 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]에 대한 배치가 [50] 밀리초에 완료되었습니다.
+15-Dec-2020 01:14:48.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]을(를) 배치합니다.
+15-Dec-2020 01:14:48.853 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]에 대한 배치가 [400] 밀리초에 완료되었습니다.
+15-Dec-2020 01:14:48.853 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]을(를) 배치합니다.
+15-Dec-2020 01:14:48.874 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]에 대한 배치가 [21] 밀리초에 완료되었습니다.
+15-Dec-2020 01:14:48.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]을(를) 배치합니다.
+15-Dec-2020 01:14:48.898 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]에 대한 배치가 [23] 밀리초에 완료되었습니다.
+15-Dec-2020 01:14:48.910 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [869] 밀리초 내에 시작되었습니다.
+15-Dec-2020 01:14:48.919 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:396)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:282)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+15-Dec-2020 01:14:48.920 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+15-Dec-2020 01:14:48.920 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+15-Dec-2020 01:14:48.946 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+15-Dec-2020 01:14:48.947 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:20:28.686 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.41
+15-Dec-2020 01:20:28.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Dec 3 2020 11:43:00 UTC
+15-Dec-2020 01:20:28.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.41.0
+15-Dec-2020 01:20:28.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+15-Dec-2020 01:20:28.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.14.3
+15-Dec-2020 01:20:28.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+15-Dec-2020 01:20:28.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home
+15-Dec-2020 01:20:28.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          14.0.2+12-46
+15-Dec-2020 01:20:28.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+15-Dec-2020 01:20:28.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:20:28.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:20:28.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Dec-2020 01:20:28.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+15-Dec-2020 01:20:28.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:20:28.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/conf/logging.properties
+15-Dec-2020 01:20:28.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Dec-2020 01:20:28.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+15-Dec-2020 01:20:28.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Dec-2020 01:20:28.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Dec-2020 01:20:28.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+15-Dec-2020 01:20:28.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:20:28.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:20:28.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/temp
+15-Dec-2020 01:20:28.718 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/parkjieun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15-Dec-2020 01:20:29.129 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+15-Dec-2020 01:20:29.192 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1159)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1172)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:592)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1039)
+		... 13 more
+15-Dec-2020 01:20:29.196 INFO [main] org.apache.catalina.startup.Catalina.load [804] 밀리초 내에 서버가 초기화되었습니다.
+15-Dec-2020 01:20:29.239 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+15-Dec-2020 01:20:29.239 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.41]
+15-Dec-2020 01:20:29.248 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]을(를) 배치합니다.
+15-Dec-2020 01:20:29.651 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]에 대한 배치가 [401] 밀리초에 완료되었습니다.
+15-Dec-2020 01:20:29.651 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]을(를) 배치합니다.
+15-Dec-2020 01:20:29.715 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]에 대한 배치가 [64] 밀리초에 완료되었습니다.
+15-Dec-2020 01:20:29.716 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]을(를) 배치합니다.
+15-Dec-2020 01:20:30.074 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]에 대한 배치가 [357] 밀리초에 완료되었습니다.
+15-Dec-2020 01:20:30.074 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]을(를) 배치합니다.
+15-Dec-2020 01:20:30.100 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]에 대한 배치가 [25] 밀리초에 완료되었습니다.
+15-Dec-2020 01:20:30.100 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]을(를) 배치합니다.
+15-Dec-2020 01:20:30.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]에 대한 배치가 [31] 밀리초에 완료되었습니다.
+15-Dec-2020 01:20:30.137 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [940] 밀리초 내에 시작되었습니다.
+15-Dec-2020 01:20:30.147 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:396)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:282)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+15-Dec-2020 01:20:30.154 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+15-Dec-2020 01:20:30.154 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+15-Dec-2020 01:20:30.181 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+15-Dec-2020 01:20:30.182 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:20:44.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.41
+15-Dec-2020 01:20:44.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Dec 3 2020 11:43:00 UTC
+15-Dec-2020 01:20:44.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.41.0
+15-Dec-2020 01:20:44.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+15-Dec-2020 01:20:44.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.14.3
+15-Dec-2020 01:20:44.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+15-Dec-2020 01:20:44.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home
+15-Dec-2020 01:20:44.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          14.0.2+12-46
+15-Dec-2020 01:20:44.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+15-Dec-2020 01:20:44.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:20:44.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:20:44.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Dec-2020 01:20:44.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+15-Dec-2020 01:20:44.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Dec-2020 01:20:44.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/conf/logging.properties
+15-Dec-2020 01:20:44.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Dec-2020 01:20:44.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+15-Dec-2020 01:20:44.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Dec-2020 01:20:44.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Dec-2020 01:20:44.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+15-Dec-2020 01:20:44.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:20:44.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41
+15-Dec-2020 01:20:44.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/temp
+15-Dec-2020 01:20:44.115 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/parkjieun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15-Dec-2020 01:20:44.514 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+15-Dec-2020 01:20:44.577 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1159)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1172)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:592)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1039)
+		... 13 more
+15-Dec-2020 01:20:44.579 INFO [main] org.apache.catalina.startup.Catalina.load [828] 밀리초 내에 서버가 초기화되었습니다.
+15-Dec-2020 01:20:44.623 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+15-Dec-2020 01:20:44.623 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.41]
+15-Dec-2020 01:20:44.631 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]을(를) 배치합니다.
+15-Dec-2020 01:20:44.980 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/docs]에 대한 배치가 [346] 밀리초에 완료되었습니다.
+15-Dec-2020 01:20:44.980 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]을(를) 배치합니다.
+15-Dec-2020 01:20:45.037 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/manager]에 대한 배치가 [56] 밀리초에 완료되었습니다.
+15-Dec-2020 01:20:45.037 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]을(를) 배치합니다.
+15-Dec-2020 01:20:45.370 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/examples]에 대한 배치가 [333] 밀리초에 완료되었습니다.
+15-Dec-2020 01:20:45.370 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]을(를) 배치합니다.
+15-Dec-2020 01:20:45.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/ROOT]에 대한 배치가 [22] 밀리초에 완료되었습니다.
+15-Dec-2020 01:20:45.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]을(를) 배치합니다.
+15-Dec-2020 01:20:45.423 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/host-manager]에 대한 배치가 [29] 밀리초에 완료되었습니다.
+15-Dec-2020 01:20:45.436 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [857] 밀리초 내에 시작되었습니다.
+15-Dec-2020 01:20:45.445 SEVERE [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:479)
+		at java.base/sun.nio.ch.Net.bind(Net.java:468)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:396)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:282)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+15-Dec-2020 01:20:45.446 INFO [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+15-Dec-2020 01:20:45.446 INFO [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+15-Dec-2020 01:20:45.476 INFO [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+15-Dec-2020 01:20:45.477 INFO [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+15-Dec-2020 01:21:40.087 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR 웹 애플리케이션 아카이브 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/springbasic.war]을(를) 배치합니다.
+15-Dec-2020 01:21:41.371 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars 적어도 하나의 JAR가 TLD들을 찾기 위해 스캔되었으나 아무 것도 찾지 못했습니다. 스캔했으나 TLD가 없는 JAR들의 전체 목록을 보시려면, 로그 레벨을 디버그 레벨로 설정하십시오. 스캔 과정에서 불필요한 JAR들을 건너뛰면, 시스템 시작 시간과 JSP 컴파일 시간을 단축시킬 수 있습니다.
+SLF4J: The requested version 1.7.16 by your slf4j binding is not compatible with [1.6]
+SLF4J: See http://www.slf4j.org/codes.html#version_mismatch for further details.
+15-Dec-2020 01:21:41.651 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR 웹 애플리케이션 아카이브 [/Users/parkjieun/fastcampus_java/tomcat/apache-tomcat-9.0.41/webapps/springbasic.war]의 배치가 [1,564] 밀리초에 완료되었습니다.
