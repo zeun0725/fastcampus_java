@@ -1,3 +1,4 @@
 kr/co/fastcampus/cli/Member.class
 kr/co/fastcampus/web/SimpleServlet.class
+kr/co/fastcampus/web/SimpleFilter.class
 kr/co/fastcampus/cli/Main.class
