@@ -12,9 +12,11 @@ class Main{
 		logger.info("hello world!");
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
+		Dao dao = context.getBean("dao",Dao.class);
 
-		Dao dao = context.getBean(Dao.class);
 		dao.run();
+
+
 
 
 
