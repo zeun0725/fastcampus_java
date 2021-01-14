@@ -6,6 +6,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+
+import java.sql.SQLException;
 @Slf4j
 class Main{
 	private static Logger logger = LoggerFactory.getLogger(Main.class);
@@ -26,6 +28,7 @@ class Main{
 //		Dao dao = context.getBean("dao",Dao.class);
 //
 //		dao.run();
+
 
 
 

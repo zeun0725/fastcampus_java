@@ -6,10 +6,10 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 @Slf4j
-public class Dao {
+public class Dao2 {
     public Connection connection;
 
-    public Dao(Connection connection) {
+    public Dao2(Connection connection) {
         this.connection = connection;
     }
 
@@ -33,6 +33,5 @@ public class Dao {
 
             log.info(member.toString());
         }
-
     }
 }
