@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="connectionFactory" class="kr.co.fastcampus.cli.ConnectionFactory">
+    <bean id="connectionFactory" class="kr.co.fastcampus.cli.ConnectionFactory" init-method="init">
         <constructor-arg name="driverClass" value="org.h2.Driver"></constructor-arg>
         <constructor-arg name="url" value="jdbc:h2:mem:test"></constructor-arg>
         <constructor-arg name="user" value="sa"></constructor-arg>
