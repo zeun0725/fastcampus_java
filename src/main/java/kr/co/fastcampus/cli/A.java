@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
 @Slf4j
@@ -17,7 +18,12 @@ public class A {
 
     @PostConstruct
     void init(){
-        log.info("" + context);
+        log.error("A post construct");
+    }
+
+    @PreDestroy
+    void destroy(){
+        log.error("A pre destroy");
     }
 
 }

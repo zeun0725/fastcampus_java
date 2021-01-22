@@ -16,6 +16,7 @@ class Main{
 		log.info("hello world!");
 
 		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
+		context.close();
 
 	}
 }
