@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.sql.SQLException;
 
@@ -15,7 +15,7 @@ class Main{
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		log.info("hello world!");
 
-		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
+		ConfigurableApplicationContext context = new AnnotationConfigApplicationContext("kr.co.fastcampus.cli");
 		context.close();
 
 	}
