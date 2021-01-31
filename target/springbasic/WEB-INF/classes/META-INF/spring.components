@@ -1,0 +1,5 @@
+#
+#Sun Jan 31 10:30:47 KST 2021
+kr.co.fastcampus.cli.Main=org.springframework.stereotype.Component
+kr.co.fastcampus.cli.B=org.springframework.stereotype.Component
+kr.co.fastcampus.cli.A=org.springframework.stereotype.Component
