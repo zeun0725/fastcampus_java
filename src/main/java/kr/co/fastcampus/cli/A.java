@@ -7,14 +7,12 @@ import org.springframework.context.ApplicationContext;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import javax.inject.Inject;
 import javax.inject.Named;
 
 @Slf4j
 @Named("a")
 public class A {
-    @Inject
-    private B b;
+    @Autowired private B b;
     @Autowired private ApplicationContext context;
     @Value("${catalog.name}") String catalogName;
     @Value("#{systemProperties['java.home']}") String property;

@@ -1,5 +1,4 @@
 #
-#Sun Jan 31 10:56:26 KST 2021
-kr.co.fastcampus.cli.Main=org.springframework.stereotype.Component
-kr.co.fastcampus.cli.B=javax.inject.Named
+#Mon Feb 01 22:49:30 KST 2021
 kr.co.fastcampus.cli.A=javax.inject.Named
+kr.co.fastcampus.cli.AppConfig=org.springframework.stereotype.Component
