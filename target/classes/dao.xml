@@ -8,13 +8,14 @@
         https://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config/>
-
+    <context:component-scan base-package="kr.co.fastcampus.cli"></context:component-scan>
+    <context:property-placeholder location="classpath:application.properties"></context:property-placeholder>
 
     <bean id="connectionFactory" class="kr.co.fastcampus.cli.ConnectionFactory">
-        <constructor-arg name="driverClass" value="org.h2.Driver"></constructor-arg>
-        <constructor-arg name="url" value="jdbc:h2:mem:test"></constructor-arg>
-        <constructor-arg name="user" value="sa"></constructor-arg>
-        <constructor-arg name="password" value="123"></constructor-arg>
+        <constructor-arg name="driverClass" value="${jdbc.driver-class}"></constructor-arg>
+        <constructor-arg name="url" value="${jdbc.url}"></constructor-arg>
+        <constructor-arg name="user" value="${jdbc.username}"></constructor-arg>
+        <constructor-arg name="password" value="${jdbc.password}"></constructor-arg>
     </bean>
     <bean id="connection" class="java.sql.Connection" factory-bean="connectionFactory" factory-method="createConnection"></bean>
 
